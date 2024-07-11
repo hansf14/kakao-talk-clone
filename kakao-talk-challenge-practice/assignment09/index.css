@@ -1,0 +1,95 @@
+body {
+  height: 100vh;
+  background: #6bbcbe;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.spinner {
+  width: 80px;
+  height: 80px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  animation: 1s ease-in-out infinite spin;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateZ(0);
+  }
+
+  50% {
+    transform: rotateZ(180deg);
+  }
+
+  to {
+    transform: rotateZ(180deg);
+  }
+}
+
+.equalizer {
+  width: 80px;
+  height: 40px;
+
+  display: flex;
+  gap: 5px;
+}
+
+.rect {
+  background-color: white;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.rect:nth-of-type(1) {
+  animation: 1s ease-in-out infinite stretch-shrink;
+}
+.rect:nth-of-type(2) {
+  animation: 1s ease-in-out 0.1s infinite stretch-shrink;
+}
+.rect:nth-of-type(3) {
+  animation: 1s ease-in-out 0.2s infinite stretch-shrink;
+}
+.rect:nth-of-type(4) {
+  animation: 1s ease-in-out 0.3s infinite stretch-shrink;
+}
+.rect:nth-of-type(5) {
+  animation: 1s ease-in-out 0.4s infinite stretch-shrink;
+}
+
+@keyframes stretch-shrink {
+  from {
+    transform: scaleY(1);
+  }
+
+  15% {
+    transform: scaleY(2);
+  }
+
+  50% {
+    transform: scaleY(1);
+  }
+
+  to {
+    transform: scaleY(1);
+  }
+}

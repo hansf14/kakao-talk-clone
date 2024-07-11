@@ -1,0 +1,24 @@
+.screen-too-wide {
+	position: fixed;
+	z-index: 99;
+	height: 100vh;
+	width: 100%;
+	background-color: var(--yellow);
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 32px;
+}
+
+/* @media screen and (max-width: 645px) and (orientation: portrait) { */
+@media screen and (max-width: 645px) {
+	.screen-too-wide {
+		display: none;
+	}
+
+	body {
+		overflow: hidden;
+	}
+}

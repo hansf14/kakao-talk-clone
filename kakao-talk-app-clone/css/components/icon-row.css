@@ -1,0 +1,80 @@
+.icon-row {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	grid-auto-rows: minmax(0, 1fr);
+	justify-items: center;
+}
+
+.icon-row--5col {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+@media screen and (max-width: 520px) {
+  .icon-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .icon-row--5col {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .icon-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .icon-row--5col {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .icon-row--5col {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.icon-row__icon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+
+	width: fit-content;
+	cursor: pointer;
+	padding: 15px;
+}
+
+.icon-row__icon div:first-child  {
+  position: relative;
+}
+
+.icon-row__icon div:first-child i + div {
+  top: -5px;
+  right: -5px;
+}
+
+.icon-row__icon div:last-child {
+	flex-grow: 1;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.icon-row__icon span {
+	margin: 0;
+}
+
+.icon-row__icon i {
+	font-size: 35px;
+}
+
+.icon-row__icon:hover i,
+.icon-row__icon:focus i,
+.icon-row__icon:active i {
+	animation: scale-big 1s ease-in-out infinite;
+}

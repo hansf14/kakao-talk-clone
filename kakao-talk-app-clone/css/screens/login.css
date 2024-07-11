@@ -1,0 +1,95 @@
+.main-login {
+  padding: 0 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.main-login-form {
+  width: 100%;
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.main-login-form input {
+  width: 100%;
+	padding: 15px 8px;
+	border: none;
+	font-size: 18px;
+}
+
+.main-login-form input::placeholder {
+  font-size: 15px;
+	color: rgba(0, 0, 0, 0.4);
+}
+
+.main-login-form .main-login-form__username,
+.main-login-form .main-login-form__password,
+.main-login-form .main-login-form__password-confirm {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	transition: border-color 0.3s ease-in-out;
+}
+
+.main-login-form .main-login-form__username:hover,
+.main-login-form .main-login-form__password:hover,
+.main-login-form .main-login-form__password-confirm:hover {
+  border-color: var(--yellow);
+  opacity: 0.8;
+}
+
+.main-login-form .main-login-form__username:active,
+.main-login-form .main-login-form__username:focus,
+.main-login-form .main-login-form__password:active,
+.main-login-form .main-login-form__password:focus,
+.main-login-form .main-login-form__password-confirm:active,
+.main-login-form .main-login-form__password-confirm:focus  {
+  border-color: orange;
+  opacity: 0.8;
+}
+
+
+.main-login-form .main-login-form__login,
+.main-login-form .main-login-form__sign-up {
+  width: 100%;
+	background-color: var(--yellow);
+	cursor: pointer;
+	padding: 20px 0;
+	border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.main-login-form .main-login-form__login:hover,
+.main-login-form .main-login-form__login:active,
+.main-login-form .main-login-form__login:focus {
+  opacity: 0.7;
+}
+
+.main-login-sign-up,
+.main-login-find {
+	text-decoration: none;
+	color: inherit;
+  transition: all 0.3s ease-in-out;
+  animation: fade-in-left 2s ease 0.5s both;
+}
+
+.main-login-sign-up {
+  font-size: 18px;
+}
+
+.main-login-find {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.main-login-find:hover,
+.main-login-find:active,
+.main-login-find:focus,
+.main-login-sign-up:hover,
+.main-login-sign-up:active,
+.main-login-sign-up:focus {
+  color: rgba(23, 121, 179, 0.8);
+}

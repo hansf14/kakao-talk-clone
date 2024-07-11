@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to KakaoTalk Clone</title>
+</head>
+
+<body>
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span>22:35</span>
+      <i class="fa-brands fa-discord"></i>
+      <i class="fa-solid fa-comment"></i>
+      <i class="fa-brands fa-viber"></i>
+    </div>
+    <div class="status-bar__column">
+      <svg class="status-bar__camera" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M 0 100
+                   L 20 30
+                   Q 50 -20 80 30
+                   L 100 100    
+                   Z" fill="black" vector-effect="non-scaling-stroke" />
+      </svg>
+      <div class="status-bar__camera-lens"></div>
+    </div>
+    <div class="status-bar__column">
+      <i class="fa-solid fa-wifi"></i>
+      <i class="fa-solid fa-signal"></i>
+      <span>73%</span>
+      <i class="fa-solid fa-battery-three-quarters fa-lg"></i>
+      <i class="fa-solid fa-bolt"></i>
+    </div>
+  </div>
+
+  <header class="welcome-header">
+    <h1 class="welcome-header__title">Welcome to KakaoTalk Clone</h1>
+    <p class="welcome-header__text">If you have a KakaoTalk Clone Account, log in with your email or phone number.</p>
+  </header>
+
+  <main class="main-login">
+    <form class="main-login-form" action="friends.html" method="get">
+      <!-- Better use "post" -->
+
+      <input class="main-login-form__username" name="username" required type="text" placeholder="Email or phone number" />
+      <input class="main-login-form__password" name="password" required type="password" placeholder="Password" />
+      <input class="main-login-form__login" type="submit" value="Log In" />
+    </form>
+    <a class="main-login-sign-up" href="sign-up.html">Create New KakaoTalk Clone Account (Sign Up)</a>
+    <span class="main-login-find dummy-btn">Find KakaoTalk Clone Account or Password</span>
+  </main>
+
+  <div class="screen-too-wide">
+    <span>Your screen is too big!</span>
+  </div>
+
+  <script src="https://kit.fontawesome.com/6e05f26994.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

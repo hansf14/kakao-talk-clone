@@ -1,0 +1,31 @@
+.badge {
+	background-color: tomato;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-weight: 600;
+  font-size: 18px;
+}
+
+.badge-dot {
+  position: absolute;
+  background-color: tomato;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+  top: -2px;
+  right: -2px;
+
+  animation: fade-blink 1s linear infinite;
+}
+
+.badge-dot--lg {
+  width: 8px;
+	height: 8px;
+  top: 2px;
+  right: -4px;
+}

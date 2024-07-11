@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find - KakaoTalk Clone</title>
+</head>
+
+<body>
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span>22:35</span>
+      <i class="fa-brands fa-discord"></i>
+      <i class="fa-solid fa-comment"></i>
+      <i class="fa-brands fa-viber"></i>
+    </div>
+    <div class="status-bar__column">
+      <svg class="status-bar__camera" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M 0 100
+                   L 20 30
+                   Q 50 -20 80 30
+                   L 100 100    
+                   Z" fill="black" vector-effect="non-scaling-stroke" />
+      </svg>
+      <div class="status-bar__camera-lens"></div>
+    </div>
+    <div class="status-bar__column">
+      <i class="fa-solid fa-wifi"></i>
+      <i class="fa-solid fa-signal"></i>
+      <span>73%</span>
+      <i class="fa-solid fa-battery-three-quarters fa-lg"></i>
+      <i class="fa-solid fa-bolt"></i>
+    </div>
+  </div>
+
+  <header class="screen-header">
+    <h1 class="screen-header__title">Find</h1>
+    <div class="screen-header__icons">
+      <a href="">
+        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+      </a>
+      <a href="settings.html">
+        <i class="fa-solid fa-gear fa-lg"></i>
+        <div class="badge-dot"></div>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="icon-row">
+      <div class="icon-row__icon">
+        <div>
+          <i class="fas fa-qrcode"></i>
+        </div>
+        <div><span>QR Code</span></div>
+      </div>
+      <div class="icon-row__icon">
+        <div>
+          <i class="far fa-address-book"></i>
+          <div class="badge-dot"></div>
+        </div>
+        <div><span>Add by Contacts</span></div>
+      </div>
+      <div class="icon-row__icon">
+        <div>
+          <i class="fas fa-fingerprint"></i>
+        </div>
+        <div><span>Add by ID</span></div>
+      </div>
+      <div class="icon-row__icon">
+        <div>
+          <i class="far fa-envelope"></i>
+        </div>
+        <div><span>Invite</span></div>
+      </div>
+      <div class="icon-row__icon">
+        <div>
+          <i class="fa-solid fa-gift"></i>
+          <div class="badge-dot"></div>
+        </div>
+        <div><span>Present</span></div>
+      </div>
+      <div class="icon-row__icon">
+        <div>
+          <i class="fa-solid fa-wallet"></i>
+        </div>
+        <div><span>Wallet</span></div>
+      </div>
+      <div class="icon-row__icon">
+        <div>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <div class="badge-dot"></div>
+        </div>
+        <div><span>Shopping</span></div>
+      </div>
+      <div class="icon-row__icon">
+        <div>
+          <i class="fa-solid fa-map-location-dot"></i>
+        </div>
+        <div><span>Map</span></div>
+      </div>
+    </div>
+
+    <div class="divider-horizontal"></div>
+
+    <div class="recommended-friends">
+      <h6 class="recommended-friends__title">Recommended Friends</h6>
+      <span>You have no recommended friends.</span>
+    </div>
+
+    <div class="divider-horizontal"></div>
+
+    <div class="open-chat">
+      <div class="open-chat__header">
+        <h4>Open Chat</h4>
+        <span>Go to Openchat Home <i class="fas fa-chevron-right fa-xs"></i></span>
+      </div>
+
+      <div class="open-post">
+        <div class="open-post__column">
+          <h5 class="open-post__title">#BTS</h5>
+          <h6 class="open-post__hashtags"><span>#bts</span><span>#army</span><span>#friends</span></h6>
+          <div class="open-post__members">
+            <img src="assets/bts.jpg" />
+            <span class="open-post__member-count">802 members</span>
+            <div class="pipe"></div>
+            <span class="open-post__member-status">Active</span>
+          </div>
+        </div>
+        <div class="open-post__column">
+          <div class="open-post__photo">
+            <img src="assets/bts.jpg" />
+            <div class="open-post__heart-count">
+              <i class="fas fa-heart fa-xs"></i>
+              <span>326</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="open-post">
+        <div class="open-post__column">
+          <h5 class="open-post__title">#Disturbed</h5>
+          <h6 class="open-post__hashtags"><span>#Asylum</span><span>#Metal</span><span>#Believe</span></h6>
+          <div class="open-post__members">
+            <img src="assets/disturbed.jpg" />
+            <span class="open-post__member-count">1232 members</span>
+            <div class="pipe"></div>
+            <span class="open-post__member-status">Active</span>
+          </div>
+        </div>
+        <div class="open-post__column">
+          <div class="open-post__photo">
+            <img src="assets/disturbed.jpg" />
+            <div class="open-post__heart-count">
+              <i class="fas fa-heart fa-xs"></i>
+              <span>856</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__btn">
+        <a class="nav__link" href="friends.html">
+          <i class="fa-regular fa-user"></i>
+        </a>
+      </li>
+      <li class="nav__btn">
+        <a class="nav__link" href="chats.html">
+          <span class="nav__notification badge">1</span>
+          <i class="fa-regular fa-comment"></i>
+        </a>
+      </li>
+      <li class="nav__btn">
+        <a class="nav__link" href="find.html">
+          <i class="fa-solid fa-magnifying-glass-location"></i>
+        </a>
+      </li>
+      <li class="nav__btn">
+        <a class="nav__link" href="more.html">
+          <i class="fa-solid fa-ellipsis"></i>
+          <div class="badge-dot badge-dot--lg"></div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="screen-too-wide">
+    <span>Your screen is too wide or in landscape mode!</span>
+  </div>
+
+  <script src="https://kit.fontawesome.com/6e05f26994.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

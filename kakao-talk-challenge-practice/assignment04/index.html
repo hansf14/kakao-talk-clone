@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>repl.it</title>
+</head>
+
+<body>
+  <h1>Create An Account</h1>
+  <form>
+    <div>
+      <label for="first-name">First name</label>
+      <input id="first-name" name="first-name" type="text" required placeholder="First name" />
+    </div>
+    <div>
+      <label for="last-name">Last name</label>
+      <input id="last-name" name="last-name" type="text" required placeholder="Last name" />
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required placeholder="Email" />
+    </div>
+    <div>
+      <label for="username">Username</label>
+      <input id="username" name="username" type="text" required placeholder="Username" />
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" required minlength="10" placeholder="Password" />
+    </div>
+    <div>
+      <label for="birth-date">Birth date</label>
+      <input id="birth-date" name="birth-date" type="date" required />
+    </div>
+    <div>
+      <label for="how-happy-are-you">How happy are you?</label>
+      <input id="how-happy-are-you" name="how-happy-are-you" type="range" min="0" max="10" step="1" value="5"
+        list="how-happy-are-you-datalist" />
+      <datalist id="how-happy-are-you-datalist">
+        <option value="0"></option>
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+        <option value="5"></option>
+        <option value="6"></option>
+        <option value="7"></option>
+        <option value="8"></option>
+        <option value="9"></option>
+        <option value="10"></option>
+      </datalist>
+    </div>
+    <div>
+      <label for="fav-color">What is your fav. color?</label>
+      <input id="fav-color" name="fav-color" type="color" />
+    </div>
+    <input type="submit" value="Create Account" />
+  </form>
+</body>
+
+</html>

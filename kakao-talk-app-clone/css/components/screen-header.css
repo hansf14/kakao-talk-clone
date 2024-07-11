@@ -1,0 +1,75 @@
+.welcome-header {
+	padding: 20% 0;
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.welcome-header__title {
+	padding-bottom: 20px;
+	font-size: 25px;
+	font-weight: 600;
+
+	animation: fade-in-left 2s ease both;
+}
+
+.welcome-header__text {
+	width: 60%;
+	opacity: 0.7;
+
+	animation: fade-in-left 2s ease 0.5s both;
+}
+
+.screen-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.screen-header__title {
+	font-size: 32px;
+	font-weight: 600;
+}
+
+@media screen and (max-width: 340px) {
+	.screen-header__icons {
+    font-size: 15px;
+	}
+}
+
+.screen-header__icons a {
+	margin-left: 25px;
+	position: relative;
+}
+
+.screen-header__icons i {
+	cursor: pointer;
+}
+
+.screen-header__icons .fa-magnifying-glass:hover,
+.screen-header__icons .fa-magnifying-glass:focus,
+.screen-header__icons .fa-magnifying-glass:active {
+	transform-origin: 50% 50%;
+	animation: circle-around 2s linear infinite;
+}
+
+.screen-header__icons .fa-comment-medical:hover,
+.screen-header__icons .fa-comment-medical:focus,
+.screen-header__icons .fa-comment-medical:active {
+	animation: scale-big 2s ease-in infinite;
+}
+
+.screen-header__icons .fa-music:hover,
+.screen-header__icons .fa-music:focus,
+.screen-header__icons .fa-music:active {
+	animation: bounce 1.2s ease infinite -0.5s;
+}
+
+.screen-header__icons .fa-gear:hover,
+.screen-header__icons .fa-gear:focus,
+.screen-header__icons .fa-gear:active {
+	animation: rotate-z 1s linear infinite;
+}

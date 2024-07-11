@@ -1,0 +1,150 @@
+/* .animation-hover-hi-there:hover {
+	opacity: 1;
+	animation: hi-there 1s ease infinite;
+} */
+
+@keyframes hi-there {
+	0% {
+		transform: scale(1);
+	}
+	30% {
+		transform: scale(1.2);
+	}
+	40%,
+	60% {
+		transform: rotate(-20deg) scale(1.2);
+	}
+	50% {
+		transform: rotate(20deg) scale(1.2);
+	}
+	70% {
+		transform: rotate(0deg) scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+/* .animation-hover-bounce:hover {
+	animation: bounce 1.2s ease infinite -0.5s;
+} */
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0%);
+	}
+	70% {
+		transform: translateY(0%);
+	}
+	80% {
+		transform: translateY(-25%);
+	}
+	90% {
+		transform: translateY(0%);
+	}
+	95% {
+		transform: translateY(-14%);
+	}
+	97% {
+		transform: translateY(0%);
+	}
+	99% {
+		transform: translateY(-6%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+/* .animation-bounce-in-right {
+	animation: bounce-in-right 2s ease both;
+} */
+
+@keyframes bounce-in-right {
+	0% {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+	60% {
+		opacity: 1;
+		transform: translateX(30px);
+	}
+	80% {
+		transform: translateX(-10px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+/* .animation-fade-in-left {
+	animation: fade-in-left 2s ease both;
+} */
+
+@keyframes fade-in-left {
+	0% {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+/* .animation-fade-in-bottom {
+	animation: fade-in-bottom 2s ease both;
+} */
+
+@keyframes fade-in-bottom {
+	0% {
+		opacity: 0;
+		transform: translateY(100vh);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes circle-around {
+	0% {
+		transform: rotate(0deg) translate(25%) rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg) translate(25%) rotate(-360deg);
+	}
+}
+
+@keyframes rotate-z {
+	0% {
+		transform: none;
+	}
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+
+@keyframes scale-big {
+	0% {
+		transform: none;
+	}
+  50% {
+		transform: scale(1.25);
+	}
+	100% {
+		transform: none;
+	}
+}
+
+@keyframes fade-blink {
+  0% {
+    opacity: 1
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,57 @@
+.status-bar {
+	display: flex;
+	justify-content: center;
+
+	padding: 5px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.status-bar__column {
+	width: 33%;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.status-bar__column:first-child {
+	justify-content: flex-start;
+}
+
+.status-bar__column:first-child span {
+	margin-right: 5px;
+}
+
+.status-bar__column:first-child i {
+	font-size: 17px;
+}
+
+.status-bar__column:nth-child(2) {
+	display: flex;
+  align-items: flex-start;
+	justify-content: center;
+}
+
+.status-bar__column:last-child {
+	justify-content: flex-end;
+}
+
+.status-bar__camera {
+	width: 30px;
+	height: 20px;
+	transform: rotateZ(180deg);
+  margin-top: -5px;
+}
+
+.status-bar__camera-lens {
+	position: absolute;
+
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+	background-color: black;
+
+	left: 50%;
+	transform: translate(-50%);
+}

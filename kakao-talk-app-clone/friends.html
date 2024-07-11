@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friends - KakaoTalk Clone</title>
+</head>
+
+<body>
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span>22:35</span>
+      <i class="fa-brands fa-discord"></i>
+      <i class="fa-solid fa-comment"></i>
+      <i class="fa-brands fa-viber"></i>
+    </div>
+    <div class="status-bar__column">
+      <svg class="status-bar__camera" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M 0 100
+                   L 20 30
+                   Q 50 -20 80 30
+                   L 100 100    
+                   Z" fill="black" vector-effect="non-scaling-stroke" />
+      </svg>
+      <div class="status-bar__camera-lens"></div>
+    </div>
+    <div class="status-bar__column">
+      <i class="fa-solid fa-wifi"></i>
+      <i class="fa-solid fa-signal"></i>
+      <span>73%</span>
+      <i class="fa-solid fa-battery-three-quarters fa-lg"></i>
+      <i class="fa-solid fa-bolt"></i>
+    </div>
+  </div>
+
+  <header class="screen-header">
+    <h1 class="screen-header__title">Friends</h1>
+    <div class="screen-header__icons">
+      <a href="find.html">
+        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+      </a>
+      <a href="find.html">
+        <i class="fa-solid fa-music fa-lg"></i>
+      </a>
+      <a href="settings.html">
+        <i class="fa-solid fa-gear fa-lg"></i>
+        <div class="badge-dot"></div>
+      </a>
+    </div>
+  </header>
+
+  <a href="" id="friends-display-link">
+    <i class="fas fa-info-circle"></i>
+    Friends' Names Display
+    <i class="fas fa-chevron-right fa-xs"></i>
+  </a>
+
+  <main>
+    <section class="user-component-list">
+      <div class="main-accordion">
+        <span>Multi-profiles</span>
+        <span>0</span>
+        <i class="fas fa-chevron-up fa-xs"></i>
+      </div>
+
+      <div class="user-component">
+        <div class="user-component__column">
+          <div class="user-component__avatar user-component__avatar--xl">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="user-component__text">
+            <h4 class="user-component__title">Add and try out your multiple profiles!</h4>
+          </div>
+        </div>
+        <div class="user-component__column">
+        </div>
+      </div>
+    </section>
+
+    <div class="divider-horizontal"></div>
+
+    <section class="user-component-list">
+      <div class="main-accordion">
+        <span>Friends' Birthdays</span>
+        <span>0</span>
+        <i class="fas fa-chevron-up fa-xs"></i>
+      </div>
+
+      <div class="user-component">
+        <div class="user-component__column">
+          <div class="user-component__avatar user-component__avatar--xl user-component__avatar--bg-tomato">
+            <i class="fa-solid fa-cake-candles"></i>
+          </div>
+          <div class="user-component__text">
+            <h4 class="user-component__title">Check your friends' birthdays!</h4>
+          </div>
+        </div>
+        <div class="user-component__column">
+        </div>
+      </div>
+    </section>
+
+    <div class="divider-horizontal"></div>
+
+    <section class="user-component-list">
+      <div class="main-accordion">
+        <span>Pinned</span>
+        <span>2</span>
+        <i class="fas fa-chevron-up fa-xs"></i>
+      </div>
+
+      <div class="user-component">
+        <div class="user-component__column">
+          <img src="assets/daehan.jpg"
+            class="user-component__avatar user-component__avatar--xl user-component__avatar--bg-white" />
+          <div class="user-component__text">
+            <div>
+              <h4 class="user-component__title" title="대한법무법인">대한법무법인</h4>
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h6 class="user-component__subtitle" title="공증인가 대한법무법인">공증인가 대한법무법인</h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <div class="user-component__content-item-counter">
+            <span>15</span>
+            <i class="fas fa-chevron-right fa-xs"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="user-component">
+        <div class="user-component__column">
+          <img src="assets/2lbio.png"
+            class="user-component__avatar user-component__avatar--xl user-component__avatar--bg-white" />
+          <div class="user-component__text">
+            <div>
+              <h4 class="user-component__title" title="2L Bio Co., Ltd">2L Bio Co., Ltd</h4>
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h6 class="user-component__subtitle" title="Premium Absorbable Threads & Fillers">Premium Absorbable Threads
+              & Fillers</h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <div class="user-component__content-item-counter">
+            <span>12</span>
+            <i class="fas fa-chevron-right fa-xs"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider-horizontal"></div>
+
+    <section class="user-component-list">
+      <div class="main-accordion">
+        <span>Friends</span>
+        <span>5</span>
+        <i class="fas fa-chevron-up fa-xs"></i>
+      </div>
+
+      <div class="user-component">
+        <div class="user-component__column">
+          <img src="assets/friends01.jfif" class="user-component__avatar user-component__avatar--xl" />
+          <div class="user-component__text">
+            <h4 class="user-component__title" title="Taylor Swift">Taylor Swift</h4>
+            <h6 class="user-component__subtitle" title="I'm the problem, it's me">I'm the problem, it's me</h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <div class="user-component__music dummy-btn">
+            <span>Taylor Swift - Anti-Hero</span><i class="fa-solid fa-play"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="user-component">
+        <div class="user-component__column">
+          <img src="assets/friends02.jfif" class="user-component__avatar user-component__avatar--xl" />
+          <div class="user-component__text">
+            <h4 class="user-component__title" title="Lady Gaga">Lady Gaga</h4>
+            <h6 class="user-component__subtitle" title="Hold My Hand ✈️ Out Now">Hold My Hand ✈️ Out Now</h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <div class="user-component__music dummy-btn">
+            <span>Calvin Harris - I’m Not Here to Make Friends</span><i class="fa-solid fa-play"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="user-component">
+        <div class="user-component__column">
+          <img src="assets/friends03.jfif" class="user-component__avatar user-component__avatar--xl" />
+          <div class="user-component__text">
+            <h4 class="user-component__title" title="Katy Perry">Katy Perry</h4>
+            <h6 class="user-component__subtitle" title="LOVE is the key that unlocks every door🗝️♥️">
+              LOVE is the key that unlocks every door🗝️♥️
+            </h6>
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+
+      <div class="user-component">
+        <div class="user-component__column">
+          <img src="assets/friends04.jfif" class="user-component__avatar user-component__avatar--xl" />
+          <div class="user-component__text" title="Beyoncé">
+            <h4 class="user-component__title">Beyoncé</h4>
+            <!-- <h6 class="user-component__subtitle">This text whatever.</h6> -->
+          </div>
+        </div>
+        <div class="user-component__column">
+          <div class="user-component__music dummy-btn">
+            <span>Mae Stephens - If We Ever Broke Up</span><i class="fa-solid fa-play"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="user-component">
+        <div class="user-component__column">
+          <img src="assets/friends05.jfif" class="user-component__avatar user-component__avatar--xl" />
+          <div class="user-component__text">
+            <h4 class="user-component__title" title="Ed Sheeran">Ed Sheeran</h4>
+            <h6 class="user-component__subtitle" title="Everywhere I look I still see you.. 💛">Everywhere I look I
+              still see you.. 💛</h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <div class="user-component__music dummy-btn">
+            <span>Miley Cyrus- Flowers</span><i class="fa-solid fa-play"></i>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="divider-horizontal"></div>
+
+    <section class="user-component-list">
+      <div class="main-accordion">
+        <span>Channels</span>
+        <span>6</span>
+        <i class="fas fa-chevron-up fa-xs"></i>
+      </div>
+
+      <div class="user-component">
+        <div class="user-component__column user-component__column--big-gap">
+          <img src="assets/daehan.jpg"
+            class="user-component__avatar user-component__avatar--little-round user-component__avatar--bg-white" />
+          <div class="user-component__text">
+            <div>
+              <h4 class="user-component__title user-component__title--sm" title="대한법무법인">대한법무법인</h4>
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h6 class="user-component__subtitle" title="공증인가 대한법무법인" title="공증인가 대한법무법인">공증인가 대한법무법인</h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <div class="user-component__content-item-counter">
+            <span>15</span>
+            <i class="fas fa-chevron-right fa-xs"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="user-component">
+        <div class="user-component__column user-component__column--big-gap">
+          <img src="assets/2lbio.png"
+            class="user-component__avatar user-component__avatar--little-round user-component__avatar--bg-white" />
+          <div class="user-component__text">
+            <div>
+              <h4 class="user-component__title user-component__title--sm" title="2L Bio Co., Ltd">2L Bio Co., Ltd</h4>
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h6 class="user-component__subtitle" title="Premium Absorbable Threads & Fillers">Premium Absorbable Threads
+              & Fillers</h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <div class="user-component__content-item-counter">
+            <span>12</span>
+            <i class="fas fa-chevron-right fa-xs"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="user-component">
+        <div class="user-component__column user-component__column--big-gap">
+          <img src="assets/google.png"
+            class="user-component__avatar user-component__avatar--little-round user-component__avatar--bg-white" />
+          <div class="user-component__text">
+            <div>
+              <h4 class="user-component__title user-component__title--sm" title="Google">Google</h4>
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h6 class="user-component__subtitle" title="Premium Absorbable Threads & Fillers">Make life easier with a
+              little help from our products.</h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <div class="user-component__content-item-counter">
+            <span>5</span>
+            <i class="fas fa-chevron-right fa-xs"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="user-component">
+        <div class="user-component__column user-component__column--big-gap">
+          <img src="assets/facebook.png"
+            class="user-component__avatar user-component__avatar--little-round user-component__avatar--bg-white" />
+          <div class="user-component__text">
+            <div>
+              <h4 class="user-component__title user-component__title--sm" title="Facebook">Facebook</h4>
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h6 class="user-component__subtitle" title="Move fast together.">Move fast together.</h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <div class="user-component__content-item-counter">
+            <span>8</span>
+            <i class="fas fa-chevron-right fa-xs"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="user-component">
+        <div class="user-component__column user-component__column--big-gap">
+          <img src="assets/instagram.jfif"
+            class="user-component__avatar user-component__avatar--little-round user-component__avatar--bg-white" />
+          <div class="user-component__text">
+            <div>
+              <h4 class="user-component__title user-component__title--sm" title="Instagram">Instagram</h4>
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h6 class="user-component__subtitle" title="Capture and Share the World's Moments.">Capture and Share the
+              World's Moments.</h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <div class="user-component__content-item-counter">
+            <span>3</span>
+            <i class="fas fa-chevron-right fa-xs"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="user-component">
+        <div class="user-component__column user-component__column--big-gap">
+          <img src="assets/twitter.png"
+            class="user-component__avatar user-component__avatar--little-round user-component__avatar--bg-white" />
+          <div class="user-component__text">
+            <div>
+              <h4 class="user-component__title user-component__title--sm" title="Facebook">Twitter</h4>
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <div class="user-component__content-item-counter">
+            <span>2</span>
+            <i class="fas fa-chevron-right fa-xs"></i>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+  </main>
+
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__btn">
+        <a class="nav__link" href="friends.html">
+          <i class="fa-solid fa-user"></i>
+        </a>
+      </li>
+      <li class="nav__btn">
+        <a class="nav__link" href="chats.html">
+          <span class="nav__notification badge">3</span>
+          <i class="fa-regular fa-comment"></i>
+        </a>
+      </li>
+      <li class="nav__btn">
+        <a class="nav__link" href="find.html">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+      </li>
+      <li class="nav__btn">
+        <a class="nav__link" href="more.html">
+          <i class="fa-solid fa-ellipsis"></i>
+          <div class="badge-dot badge-dot--lg"></div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="screen-too-wide">
+    <span>Your screen is too big.</span>
+  </div>
+
+  <div class="splash-screen">
+    <i class="fa-solid fa-comment"></i>
+    <div>
+
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/6e05f26994.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

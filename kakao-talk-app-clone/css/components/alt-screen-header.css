@@ -1,0 +1,48 @@
+.alt-header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.alt-header__column:first-child,
+.alt-header__column:last-child
+ {
+  width: 25%;
+}
+
+.alt-header__column:nth-child(2) {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.alt-header__title {
+  font-size: 28px;
+  font-weight: 600;
+  padding: 0 15px;
+
+  overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.alt-header__title--sm {
+  font-size: 18px;
+}
+
+.alt-header__column:nth-child(2) {
+  text-align: center;
+}
+
+
+.alt-header__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.alt-header__column:last-child span {
+  cursor: pointer;
+}
+
+.alt-header__column span:last-child {
+  margin-left: 20px;
+}

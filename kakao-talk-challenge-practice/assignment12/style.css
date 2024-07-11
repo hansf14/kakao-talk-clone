@@ -1,0 +1,385 @@
+:root {
+  --font-color1: black;
+  --font-color2: #bbb;
+  --font-color3: white;
+  --background-color1: black;
+  --background-color2: #ccc;
+  --box-shadow-color1: #ccc;
+  --box-shadow-color2: #ff9467;
+  --main-border-radius: 50px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: fit-content;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+/*   padding: 50px; */
+/*   flex-wrap: wrap; */
+}
+
+.artist-screen,
+.song-screen {
+  width: 400px;
+  height: 90vh;
+  min-height: 675px;
+
+  border-radius: var(--main-border-radius);
+  box-shadow: 0 30px 50px var(--box-shadow-color1);
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.artist-screen main,
+.song-screen main {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  height: 60px;
+  display: flex;
+}
+
+nav > div {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+
+  font-size: 25px;
+}
+
+nav > div:last-child {
+  justify-content: flex-end;
+}
+
+.artist {
+  height: 250px;
+  display: grid;
+  grid-template-rows: 3fr 1fr 1fr;
+}
+
+.artist-portrait,
+.artist-name,
+.artist-genre {
+  display: flex;
+  justify-content: center;
+}
+
+.artist-portrait {
+  padding: 15px 0 40px;
+}
+
+.artist-name {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 15px 0;
+}
+
+.artist-genre {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--font-color2);
+}
+
+.artist-portrait-img-container {
+  position: relative;
+  
+  width: 30%;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 25px 20px var(--box-shadow-color2);
+}
+
+.artist-portrait-img-container::before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.artist-portrait-img-container > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  filter: brightness(150%);
+}
+
+.shuffle-and-fav {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 30px 0;
+}
+
+.shuffle-btn,
+.fav-btn
+{
+  font-size: 18px;
+  border-radius: 20% / 50%;
+  padding: 15px 40px;
+  cursor: pointer;
+}
+
+.shuffle-btn {
+  background-color: var(--background-color1);
+  color: var(--font-color3);
+}
+
+.fav-btn {
+  background-color: transparent;
+  border: none;
+  color: var(--font-color2);
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0;
+}
+
+.fa-heart {
+  color: var(--font-color1);
+}
+
+.song-list {
+  flex-grow: 1;
+  height: 100px;
+  
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+/* visibility not works on ::-webkit-scrollbar */
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+/* For Firefox*/
+/* scrollbar-color: Two valid colors.
+The first applies to the thumb of the scrollbar, the second to the track. */
+.song-list:hover {
+	scrollbar-color: #888 #f1f1f1;
+}
+
+.song-list:not(:hover) {
+	scrollbar-color: transparent transparent;
+}
+
+* {
+	scrollbar-width: thin;
+}
+
+/* Handle */
+*:hover::-webkit-scrollbar-thumb {
+	background-color: #888;
+}
+
+/* Handle on hover */
+*:hover::-webkit-scrollbar-thumb:hover {
+	background-color: #555;
+}
+
+/* Track */
+*:hover::-webkit-scrollbar-track {
+	background-color: #f1f1f1;
+}
+
+.song {
+  display: flex;
+  gap: 15px;
+  padding: 10px 10%;
+}
+
+.song-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.song-cover {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.song-cover > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.song-artist {  
+  color: var(--font-color2);
+  font-weight: bold;
+}
+
+.song-name {
+  text-transform: uppercase;
+  color: var(--font-color1);
+  font-weight: bold;
+}
+
+.song-menu-btn {
+  margin: auto 0 auto auto;
+  color: var(--font-color2);
+}
+
+.player {
+  height: 80px;
+  margin: 10px;
+  padding: 8px 30px;
+  background-color: var(--background-color1);
+  border-radius: var(--main-border-radius);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.player .player-song-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.player .song-name {
+  color: var(--font-color3);
+}
+
+.player-controllers {
+  color: var(--font-color3);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.player .fa-pause {
+  font-size: 30px;
+}
+
+.current-song-album-cover {
+  padding-top: 30px;
+  
+  display: flex;
+  justify-content: center;
+}
+
+.current-song-album-cover-img-container {
+  height: 30vh;
+  
+  border-radius: 20px;
+  box-shadow: 0 25px 40px var(--box-shadow-color2);
+  overflow: hidden;
+}
+
+.current-song-album-cover-img-container > img {
+  width: 100%;
+  height: 100%;
+}
+
+.current-song-detail {
+  padding: 80px 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.current-song-name {
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--font-color1);
+}
+
+.current-song-artist {
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--font-color2);
+}
+
+.current-song-porgress-and-controllers {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.current-song-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px 30px;
+}
+
+.current-song-progress-playtime {
+  display: flex;
+  justify-content: space-between;
+  color: var(--font-color2);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.current-song-controllers {
+  padding: 15px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.current-song-progress-bar {
+  width: 100%;
+  height: 4px;
+  background-color: var(--background-color2);
+  border-radius: 2px;
+  position: relative;
+}
+
+.current-song-progress-bar::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 40%;
+  background-color: var(--background-color1);
+}
+
+.current-song-progress-bar::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  background-color: var(--background-color1);
+}
+
+.current-song-controllers .fa-retweet,
+.current-song-controllers .fa-random {
+  color: var(--font-color2);
+}
+
+.current-song-controllers .fa-play-circle {
+  font-size: 50px;
+}

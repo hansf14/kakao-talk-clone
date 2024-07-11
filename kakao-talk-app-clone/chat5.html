@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, interactive-widget=resizes-content" />
+  <title>Chat 2L Bio Co., Ltd - KakaoTalk Clone</title>
+</head>
+
+<body id="chat-screen">
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span>22:35</span>
+      <i class="fa-brands fa-discord"></i>
+      <i class="fa-solid fa-comment"></i>
+      <i class="fa-brands fa-viber"></i>
+    </div>
+    <div class="status-bar__column">
+      <svg class="status-bar__camera" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M 0 100
+                   L 20 30
+                   Q 50 -20 80 30
+                   L 100 100    
+                   Z" fill="black" vector-effect="non-scaling-stroke" />
+      </svg>
+      <div class="status-bar__camera-lens"></div>
+    </div>
+    <div class="status-bar__column">
+      <i class="fa-solid fa-wifi"></i>
+      <i class="fa-solid fa-signal"></i>
+      <span>73%</span>
+      <i class="fa-solid fa-battery-three-quarters fa-lg"></i>
+      <i class="fa-solid fa-bolt"></i>
+    </div>
+  </div>
+
+  <header class="alt-header">
+    <div class="alt-header__column">
+      <a href="javascript:history.back();">
+        <i class="fa-solid fa-angle-left fa-2x"></i>
+      </a>
+    </div>
+    <div class="alt-header__column">
+      <h1 class="alt-header__title alt-header__title--sm" title="2L Bio Co., Ltd">2L Bio Co., Ltd</h1>
+    </div>
+    <div class="alt-header__column">
+      <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+      <span><i class="fa-solid fa-bars fa-lg"></i></span>
+    </div>
+  </header>
+
+  <main class="main-chat">
+    <div class="chat__timestamp">
+      Monday, March 13, 2023
+    </div>
+
+    <div class="message-row message-row--own">
+      <div class="message-row__content">
+        <div class="message__info">
+          <span class="message__bubble">안녕하세요, 매선 제조사 맞죠? 귀사 상품들 매선 종류 좀 알려주세요.</span>
+          <span class="message__time">09:33</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="message-row">
+      <img src="assets/2lbio.png" />
+      <div class="message-row__content">
+        <span class="message__author">2L Bio Co., Ltd</span>
+        <div class="message__info">
+          <span class="message__bubble">안녕하세요, 주식회사 투엘바이오입니다. 매선 제조사 맞습니다.</span>
+          <span class="message__time">09:34</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="message-row">
+      <img src="assets/2lbio.png" />
+      <div class="message-row__content">
+        <span class="message__author">2L Bio Co., Ltd</span>
+        <div class="message__info">
+          <span class="message__bubble">판매중인 매선 상품 종류로는 PDO, PLCL, PCL, PLLA 이렇게 4종류가 있습니다.</span>
+          <span class="message__time">09:35</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <form class="reply">
+    <div class="reply__column">
+      <i class="fa-regular fa-square-plus fa-lg"></i>
+    </div>
+    <div class="reply__column">
+      <input type="text" placeholder="Write a message..." />
+      <i class="fa-regular fa-face-smile fa-lg"></i>
+      <button>
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+  </form>
+
+  <div class="screen-too-wide">
+    <span>Your screen is too wide or in landscape mode!</span>
+  </div>
+
+  <script src="https://kit.fontawesome.com/6e05f26994.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

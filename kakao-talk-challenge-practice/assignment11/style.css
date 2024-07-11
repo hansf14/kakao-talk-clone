@@ -1,0 +1,289 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	max-width: 600px;
+}
+
+header {
+	position: relative;
+}
+
+nav {
+	display: flex;
+	font-size: 25px;
+	padding: 30px 10px 50px;
+	background-color: #ffce33;
+}
+
+nav > div {
+	width: 33%;
+}
+
+.header-app-name {
+	display: flex;
+	justify-content: center;
+
+	font-weight: bold;
+}
+
+.header-shopping-cart {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.header-search {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.header-search input {
+	border: none;
+	width: 100%;
+	height: 40px;
+	padding: 25px 30px;
+	box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+
+	position: relative;
+}
+
+.header-search .fa-search {
+	position: absolute;
+	font-size: 20px;
+	right: 0;
+	transform: translateX(-100%);
+	opacity: 0.4;
+}
+
+.header-search input::placeholder {
+	font-weight: bold;
+	opacity: 0.7;
+}
+
+main {
+	padding: 60px 30px 20px;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+/* visibility not works on ::-webkit-scrollbar */
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+/* For Firefox*/
+/* scrollbar-color value will inherited. */
+/* scrollbar-width value doesn't inherit. */
+/* scrollbar-color and scrollbar-width not work on other browsers. */
+main:hover {
+	scrollbar-color: #888 #f1f1f1;
+}
+
+main:not(:hover) {
+	scrollbar-color: transparent transparent;
+}
+
+* {
+	scrollbar-width: thin;
+}
+/* scrollbar-color: Two valid colors.
+The first applies to the thumb of the scrollbar, the second to the track. */
+
+/* Handle */
+/* ::-webkit-scrollbar-thumb {
+  background-color: #888; 
+} */
+*:hover::-webkit-scrollbar-thumb {
+	background-color: #888;
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background-color: #555; 
+} */
+*:hover::-webkit-scrollbar-thumb:hover {
+	background-color: #555;
+}
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+  background-color: #f1f1f1; 
+} */
+*:hover::-webkit-scrollbar-track {
+	background-color: #f1f1f1;
+}
+
+.book-of-the-day {
+	display: flex;
+	flex-direction: column;
+}
+
+.book-of-the-day > h1,
+.top-adventures > h1,
+.popular-authors > h1 {
+	font-size: 30px;
+	font-weight: bold;
+	padding-bottom: 30px;
+}
+
+.book-of-the-day-book {
+	display: flex;
+}
+
+.book-of-the-day-book-cover,
+.popular-author-image {
+	flex-grow: 0;
+	flex-shrink: 0;
+	width: 30%;
+}
+
+.book-of-the-day-book-cover > img,
+.popular-author-image > img,
+.top-adventures-book > img {
+	max-width: 100%;
+	border-radius: 10px;
+}
+
+.book-of-the-day-book-detail {
+	flex-grow: 1;
+	padding-left: 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.book-of-the-day-book-title,
+.popular-author-name {
+	font-size: 23px;
+	font-weight: bold;
+	line-height: 1.1;
+}
+
+.book-of-the-day-book-publisher {
+	color: #bbb;
+	font-weight: bold;
+}
+
+.fa-star.on {
+	color: #ffce34;
+}
+
+.fa-star.off {
+	color: #bbb;
+}
+
+.tags {
+	display: flex;
+	gap: 10px;
+}
+
+.tag {
+	color: #444;
+	background-color: #ededed;
+	border-radius: 10px;
+	font-weight: bold;
+	line-height: normal;
+	padding: 8px 15px;
+}
+
+.controllers {
+	display: flex;
+	gap: 40px;
+	padding-right: 20px;
+}
+
+.bookmark {
+	border: none;
+	border-radius: 50%;
+	background-color: #ffce33;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+
+.book-now {
+	color: #ddd;
+	background-color: black;
+	width: 140px;
+	height: 50px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.top-adventures {
+	display: flex;
+	flex-shrink: 0;
+	flex-grow: 0;
+	flex-direction: column;
+	overflow-x: auto;
+	padding: 15px 0;
+}
+
+.top-adventures-books {
+	display: flex;
+	gap: 25px;
+}
+
+.top-adventures-book {
+	flex: 0 0 130px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.top-adventures-book .rating {
+	display: flex;
+	width: 80%;
+}
+
+.top-adventures-book .rating > .fa-star {
+	width: 20%;
+}
+
+.popular-authors {
+	display: flex;
+	flex-direction: column;
+}
+
+.popular-author {
+	display: flex;
+}
+
+.popular-author-detail {
+	padding-left: 30px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+}
+
+.popular-author-desc {
+	color: #bbb;
+}
